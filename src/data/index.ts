@@ -18,11 +18,11 @@ import b3 from "../assets/images/b3.png";
 
 export const navItems = [
 	{ title: "Home", path: "/", active: true },
-	{ title: "About", path: "/", active: false },
-	{ title: "Projects", path: "/", active: false },
 	{ title: "Services", path: "/", active: false },
-	{ title: "News", path: "/", active: false },
-	{ title: "Contact", path: "/", active: false },
+	{ title: "About Us ", path: "/", active: false },
+	{ title: "Testimonials", path: "/", active: false },
+	{ title: "Contact Us", path: "/", active: false },
+	{ title: "Join Our Team ", path: "/", active: false },
 ];
 
 export const projectCats = [
