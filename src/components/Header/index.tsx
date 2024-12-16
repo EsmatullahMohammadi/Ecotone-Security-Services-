@@ -1,15 +1,15 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 
 import { navItems } from "../../data";
-import {
-	LogoBehance,
-	LogoFacebook,
-	LogoInstagram,
-	LogoLinkedin,
-	LogoTwitter,
-} from "react-ionicons";
+// import {
+// 	LogoBehance,
+// 	LogoFacebook,
+// 	LogoInstagram,
+// 	LogoLinkedin,
+// 	LogoTwitter,
+// } from "react-ionicons";
 
 const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
