@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Button from "../Button";
 import bg from "../../assets/images/bg.png";
 
