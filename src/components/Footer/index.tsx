@@ -99,11 +99,11 @@ const Footer = () => {
 					
 				</span>
 				<div className="flex items-center gap-6">
-					<LogoFacebook cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
-					<LogoInstagram cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
-					<LogoLinkedin cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
-					<LogoTwitter cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
-					<LogoYoutube cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
+					<LogoFacebook color={"#3b5998"}  cssClasses={" !text-secondary cursor-pointer"}/>
+					<LogoInstagram color={"#E4405F"}  cssClasses={"!text-secondary cursor-pointer"}/>
+					<LogoLinkedin color={"#0077B5"}  cssClasses={"!text-secondary cursor-pointer"}/>
+					<LogoTwitter color={"#1DA1F2"}  cssClasses={"!text-secondary cursor-pointer"}/>
+					<LogoYoutube color={"#FF0000"}  cssClasses={"!text-secondary cursor-pointer"}/>
 				</div>
 			</div>
 		</div>

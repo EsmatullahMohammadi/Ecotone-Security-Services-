@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 
 import { navItems } from "../../data";
+import { Call } from "react-ionicons";
 
 const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,12 @@ const Header = () => {
 						</a>
 					))}
 				</div>
-				<div className="hidden lg:flex items-center ">
+				<div className="hidden lg:flex items-center gap-6">
+					<a href="tel:+1234567890" className="text-[#2cbdfc] hover:text-[#2a96c5]font-bold flex">
+					<Call color={"#34b7f1"}  cssClasses={"!text-secondary cursor-pointer"}/>
+						+1 (234) 567-890						
+					</a>
+
 				<a
 					href={""}
 					key={""}
