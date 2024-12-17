@@ -5,6 +5,7 @@ import {
 	LogoInstagram,
 	LogoLinkedin,
 	LogoTwitter,
+	LogoWhatsapp,
 	LogoYoutube,
 } from "react-ionicons";
 
@@ -81,8 +82,16 @@ const Footer = () => {
 						163 Elm Drive, New York City United States
 					</span>
 					<a href="tel:+1234567890" className="text-gray font-sans flex">
-					<Call color={"#666666"}  cssClasses={"!text-secondary  cursor-pointer"}/>
-						+1 (234) 567-890						
+						<Call color={"#666666"}  cssClasses={"!text-secondary  cursor-pointer"}/>
+							+1 (234) 567-890						
+					</a>
+					<a
+						href="https://wa.me/93777187806" // Replace with your actual phone number
+						target="_blank"
+						className="text-gray font-sans flex"
+						>
+						<LogoWhatsapp color={"#666666"}  cssClasses={"!text-secondary cursor-pointer"}/>
+						Contact Us on WhatsApp
 					</a>
 					<a
 						href="#"
