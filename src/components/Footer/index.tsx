@@ -18,7 +18,7 @@ const Footer = () => {
 						className="w-[150px]"
 					/>
 					<span className="font-sans max-w-[280px] text-gray">
-						Vehicula at eget a arcu neque, ultricies liquet tempus.
+						It is some text in here about your company 
 					</span>
 				</div>
 				<div className="flex flex-col gap-5">

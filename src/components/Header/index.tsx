@@ -3,21 +3,14 @@ import { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 
 import { navItems } from "../../data";
-// import {
-// 	LogoBehance,
-// 	LogoFacebook,
-// 	LogoInstagram,
-// 	LogoLinkedin,
-// 	LogoTwitter,
-// } from "react-ionicons";
 
 const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	return (
 		<div
-			className="w-full fixed top-0 left-0 flex items-center justify-center h-24 bg-white z-50 shadow-md"
+			className="w-full fixed top-0 left-0 flex items-center justify-center h-20 bg-white z-50 shadow-md"
 		>
-			<div className="absolute top-9 px-12 w-full flex items-center justify-between">
+			<div className="absolute top-7 px-12 w-full flex items-center justify-between">
 				<img src={logo} alt="logo" />
 
 				<div className="hidden lg:flex items-center gap-10">
@@ -26,7 +19,7 @@ const Header = () => {
 							href={item.path}
 							key={item.title}
 							target="_blank"
-							className={`font-sans uppercase font-bold border-b pb-2  hover:text-blue-700 tracking-widest ${
+							className={`font-sans uppercase font-bold border-b pb-2  hover:text-blue-700 hover:border-b-blue-700 tracking-widest ${
 								item.active ? "border-blue-700 text-blue-700" : "border-transparent text-black"
 							}`}
 						>
@@ -35,29 +28,24 @@ const Header = () => {
 					))}
 				</div>
 				<div className="hidden lg:flex items-center ">
-						<a
-							href={""}
-							key={""}
-							target="_blank"
-							className={`font-sans uppercase font-medium border-b pb-2 tracking-widest border-transparent text-black
-							`}
-						>
-							Contact Us
-						</a>
-				</div>
+				<a
+					href={""}
+					key={""}
+					target="_blank"
+					className={`font-sans uppercase font-semibold text-white bg-blue-600 
+						hover:bg-blue-700 hover:scale-105 transition-all duration-300 ease-in-out 
+						py-2 px-6 rounded-lg tracking-wide text-center`}
+					>
+					Contact Us
+				</a>
 
-				{/* <div className="hidden lg:flex items-center gap-6">
-					<LogoFacebook cssClasses="!text-white !fill-white cursor-pointer" />
-					<LogoInstagram cssClasses="!text-white !fill-white cursor-pointer" />
-					<LogoLinkedin cssClasses="!text-white !fill-white cursor-pointer" />
-					<LogoTwitter cssClasses="!text-white !fill-white cursor-pointer" />
-					<LogoBehance cssClasses="!text-white !fill-white cursor-pointer" />
-				</div> */}
+
+				</div>
 				
 
 				{/* for mobile device */}
 				<button
-					className="lg:hidden text-black text-xl"
+					className="lg:hidden text-black text-2xl"
 					onClick={() => setMenuOpen(!menuOpen)}
 				>
 					☰
@@ -72,13 +60,14 @@ const Header = () => {
 						<a
 							href={item.path}
 							key={item.title}
-							className={`font-sans uppercase font-medium border-b pb-2 hover:text-primary first:tracking-widest ${
-								item.active ? "border-primary text-primary" : "border-transparent text-black"
+							className={`font-sans uppercase font-medium border-b pb-2 hover:text-blue-700 hover:border-blue-700 first:tracking-widest ${
+								item.active ? "border-blue-700 text-blue-700" : "border-transparent text-black"
 							}`}
 						>
 							{item.title}
 						</a>
 					))}
+					<a href="#" className="font-sans uppercase font-medium border-b pb-2 hover:text-blue-700 hover:border-blue-700 first:tracking-widest border-transparent text-black">contact us</a>
 				</div>
 			</div>
 		</div>

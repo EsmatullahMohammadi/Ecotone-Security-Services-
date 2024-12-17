@@ -21,7 +21,7 @@ export const navItems = [
 	{ title: "Services", path: "/", active: false },
 	{ title: "About Us ", path: "/", active: false },
 	{ title: "Testimonials", path: "/", active: false },
-	{ title: "Contact Us", path: "/", active: false },
+	// { title: "Contact Us", path: "/", active: false },
 	{ title: "Join Our Team ", path: "/", active: false },
 ];
 
