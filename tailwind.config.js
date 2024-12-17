@@ -8,7 +8,7 @@ export default {
 				oswald: ["Oswald", "sans-serif"],
 			},
 			colors: {
-				primary: "#FF9E0D",
+				primary:  '#003366', // Dark blue or navy color
 				secondary: "#1F1F1F",
 				gray: "#666666",
 				disabled: "#737373",

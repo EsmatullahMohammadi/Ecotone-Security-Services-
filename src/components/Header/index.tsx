@@ -15,7 +15,7 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	return (
 		<div
-			className="w-full fixed top-0 left-0 flex items-center justify-center h-20 bg-black z-50 shadow-md"
+			className="w-full fixed top-0 left-0 flex items-center justify-center h-24 bg-white z-50 shadow-md"
 		>
 			<div className="absolute top-9 px-12 w-full flex items-center justify-between">
 				<img src={logo} alt="logo" />
@@ -26,8 +26,8 @@ const Header = () => {
 							href={item.path}
 							key={item.title}
 							target="_blank"
-							className={`font-oswald uppercase font-medium border-b pb-2 tracking-widest ${
-								item.active ? "border-primary text-primary" : "border-transparent text-white"
+							className={`font-sans uppercase font-bold border-b pb-2  hover:text-blue-700 tracking-widest ${
+								item.active ? "border-blue-700 text-blue-700" : "border-transparent text-black"
 							}`}
 						>
 							{item.title}
@@ -39,7 +39,7 @@ const Header = () => {
 							href={""}
 							key={""}
 							target="_blank"
-							className={`font-oswald uppercase font-medium border-b pb-2 tracking-widest border-transparent text-white
+							className={`font-sans uppercase font-medium border-b pb-2 tracking-widest border-transparent text-black
 							`}
 						>
 							Contact Us
@@ -57,7 +57,7 @@ const Header = () => {
 
 				{/* for mobile device */}
 				<button
-					className="lg:hidden text-white text-xl"
+					className="lg:hidden text-black text-xl"
 					onClick={() => setMenuOpen(!menuOpen)}
 				>
 					☰
@@ -66,14 +66,14 @@ const Header = () => {
 				<div
 					className={`${
 						menuOpen ? "flex" : "hidden"
-					} lg:hidden flex-col items-center absolute top-10 left-0 w-full bg-black p-4 gap-4 z-40`}
+					} lg:hidden flex-col items-center absolute top-10 left-0 w-full bg-white p-4 gap-4 z-40`}
 				>
 					{navItems.map((item) => (
 						<a
 							href={item.path}
 							key={item.title}
-							className={`font-oswald uppercase font-medium border-b pb-2 tracking-widest ${
-								item.active ? "border-primary text-primary" : "border-transparent text-white"
+							className={`font-sans uppercase font-medium border-b pb-2 hover:text-primary first:tracking-widest ${
+								item.active ? "border-primary text-primary" : "border-transparent text-black"
 							}`}
 						>
 							{item.title}

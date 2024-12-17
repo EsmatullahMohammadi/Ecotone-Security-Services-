@@ -1,10 +1,10 @@
 import logo from "../../assets/images/logoBlack.svg";
 import {
-	LogoBehance,
 	LogoFacebook,
 	LogoInstagram,
 	LogoLinkedin,
 	LogoTwitter,
+	LogoYoutube,
 } from "react-ionicons";
 
 const Footer = () => {
@@ -95,21 +95,15 @@ const Footer = () => {
 			</div>
 			<div className="w-full flex lg:flex-row flex-col items-center justify-between border-t lg:h-[80px] lg:gap-0 gap-10 lg:py-0 py-5 border-[#DADADA] lg:px-[310px] px-5">
 				<span className="font-sans text-gray lg:text-left text-center">
-					©2024 Boldiz | Developed by:{" "}
-					<a
-						href="https://www.youtube.com/channel/UCCW0Rmnu7AocSIcc0PUMH0Q"
-						target="_blank"
-						className="font-bold text-secondary"
-					>
-						Code It Down
-					</a>
+					Copyright at ©2024 Lecoton Security Service
+					
 				</span>
 				<div className="flex items-center gap-6">
 					<LogoFacebook cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
 					<LogoInstagram cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
 					<LogoLinkedin cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
 					<LogoTwitter cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
-					<LogoBehance cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
+					<LogoYoutube cssClasses={"!text-secondary !fill-secondary cursor-pointer"} />
 				</div>
 			</div>
 		</div>
