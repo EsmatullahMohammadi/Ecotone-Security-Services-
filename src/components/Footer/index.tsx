@@ -1,5 +1,6 @@
 import logo from "../../assets/images/logoBlack.svg";
 import {
+	Call,
 	LogoFacebook,
 	LogoInstagram,
 	LogoLinkedin,
@@ -79,11 +80,9 @@ const Footer = () => {
 					<span className="text-gray font-sans max-w-[240px]">
 						163 Elm Drive, New York City United States
 					</span>
-					<a
-						href="#"
-						className="text-gray font-sans"
-					>
-						(+089) 234-516-6123
+					<a href="tel:+1234567890" className="text-gray font-sans flex">
+					<Call color={"#666666"}  cssClasses={"!text-secondary  cursor-pointer"}/>
+						+1 (234) 567-890						
 					</a>
 					<a
 						href="#"
