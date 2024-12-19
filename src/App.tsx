@@ -9,13 +9,13 @@ import Header from "./components/Header";
 // import Blog from "./components/Blog";
 // import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Home from "./components/Home/Home";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
 	return (
 		<div className="w-full flex flex-col">
 			<Header />
-			<Home />
+			<Outlet />
 			{/* <About />
 			<Projects />
 			<Banner />
